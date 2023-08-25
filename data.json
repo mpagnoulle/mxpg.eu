@@ -1,0 +1,106 @@
+{
+  "links": [
+    {
+      "name": "Home",
+      "route": "#home"
+    },
+    {
+      "name": "About",
+      "route": "#about"
+    },
+    {
+      "name": "Projects",
+      "route": "#projects"
+    },
+    {
+      "name": "Technologies",
+      "route": "#technologies"
+    },
+    {
+      "name": "Contact",
+      "route": "#contact"
+    }
+  ],
+  "intro": {
+    "typed": [
+      "Software Developer",
+      "Full-Stack Developer",
+      "AWS Solutions Architect"
+    ]
+  },
+  "skills": {
+    "Languages known": [
+        "C++",
+        "PHP",
+        "Python",
+        "C#",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Dart"
+    ],
+    "Frontend": [
+        "React",
+        "Redux",
+        "Next.js",
+        "Tailwind CSS",
+        "MUI",
+        "Bootstrap",
+        "jQuery"
+    ],
+    "Backend, Database and Cloud": [
+        "Flask",
+        "MongoDB",
+        "MySQL",
+        "Amazon AWS",
+        "Vercel",
+        "Docker"
+    ],
+    "Mobile": [
+        "Flutter",
+        "Android",
+        "Apple"
+    ],
+    "Embedded Systems": [
+      "Arduino",
+      "Espressif"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Telematics Device",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": ["Embedded System", "C/C++", "FreeRTOS", "Python", "MongoDB"],
+      "imageUrl": "/corpcomment.png"
+    },
+    {
+      "title": "StreamDiffusion",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "tags": ["Software", "C# .NET", "Python", "PHP"],
+      "imageUrl": "/rmtdev.png"
+    },
+    {
+      "title": "OnTracks",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "tags": ["Mobile App", "Objective-C", "Node.js", "PHP", "MySQL"],
+      "imageUrl": "/wordanalytics.png"
+    },
+    {
+      "title": "RotexBelgium",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "tags": ["Website", "PHP", "jQuery", "MySQL"],
+      "imageUrl": "/wordanalytics.png"
+    },
+    {
+      "title": "Ticketing System",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "tags": ["Software", "C# .NET", "PHP", "MySQL"],
+      "imageUrl": "/wordanalytics.png"
+    }
+  ]
+}

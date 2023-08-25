@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  --line-color: #e5e7eb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.has-tooltip svg {
+  pointer-events: none;
+}
+.tooltip {
+  @apply absolute transform scale-50;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply opacity-100 transform scale-100;
+
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to bottom, rgba(249, 250, 251, 0), rgba(249, 250, 251, 1)),
+    url('/bg_grid.svg');
+}
+
+.bg-gradient {
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(to bottom, rgba(249, 250, 251, 0), rgba(249, 250, 251, 1)),
+    url('/bg_gradient.png');
+}
+
+.bg-grid-dark {
+  background-image:
+    linear-gradient(to bottom, rgba(17, 24, 39, 0), rgba(17, 24, 39, 1)),
+    url('/bg_grid.svg');
+}
+
+.bg-gradient-dark {
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(to bottom, rgba(17, 24, 39, 0), rgba(17, 24, 39, 1)),
+    url('/bg_gradient_dark.png');
 }
