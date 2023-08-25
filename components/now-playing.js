@@ -55,7 +55,7 @@ const NowPlaying = () => {
       <div className="flex-1 z-10">
         {song.isPlaying ? (
           <p className="text-gray-700 dark:text-white/80 font-light text-xs mb-1">
-            I'm currently listening to
+            I&apos;m currently listening to
           </p>
         ) : (
           <p className="text-gray-700 dark:text-white/80 font-light text-xs mb-1">
