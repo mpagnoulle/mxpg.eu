@@ -32,7 +32,7 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="block font-bold">Hello,</span>
-            <span className="block font-bold">I'm Maxime</span>
+            <span className="block font-bold">I&apos;m Maxime</span>
             <ReactTyped
               strings={intro.typed}
               typeSpeed={60}

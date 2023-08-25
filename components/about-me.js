@@ -19,7 +19,7 @@ export default function AboutMe() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Hi, I’m Maxime Pagnoulle, a passionate{" "}
+        Hi, I&apos;m Maxime Pagnoulle, a passionate{" "}
         <span className="font-medium">Software Developer</span> striving to
         bring ideas to life by coding.
       </p>
@@ -30,11 +30,11 @@ export default function AboutMe() {
         solution to a problem. I am always looking to learn new technologies.
       </p>
       <p className="pt-4">
-        And when I am not in front of the screen I like to go for runs, the gym
+        And when I&apos;m not in front of the screen I like to go for runs, the gym
         or enjoy a nice meal out with my friends.
       </p>
       <p className="pt-4">
-        I am currently looking for a{" "}
+        I&apos;m currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a {" "}
         <span className="font-medium">Software Developer</span>.
       </p>
