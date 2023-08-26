@@ -70,35 +70,35 @@
     {
       "title": "Telematics Device",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "A device created for a corporate to track vehicles, enabling real-time location data transmission to the cloud. It offers the convenience of over-the-air configuration and firmware updates.",
       "tags": ["Embedded System", "C/C++", "FreeRTOS", "Python", "MongoDB"],
       "imageUrl": "/corpcomment.png"
     },
     {
       "title": "StreamDiffusion",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Software solution for effortless audio streaming to SHOUTcast and IceCast servers. Ideal for radio stations seeking seamless broadcasting.",
       "tags": ["Software", "C# .NET", "Python", "PHP"],
       "imageUrl": "/rmtdev.png"
     },
     {
       "title": "OnTracks",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "An iOS app allowing users to plan and track their train journeys on the SNCB/NMBS network, it offers route planning, live tracking, and up-to-date travel information, enhancing the travel experience for commuters and travelers.",
       "tags": ["Mobile App", "Objective-C", "Node.js", "PHP", "MySQL"],
       "imageUrl": "/wordanalytics.png"
     },
     {
       "title": "RotexBelgium",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Website for a Non-Profit Organization hosting events for Exchange Students in Belgium. The site feature a custom-built CMS designed for seamless event management and easy participant registration.",
       "tags": ["Website", "PHP", "jQuery", "MySQL"],
       "imageUrl": "/wordanalytics.png"
     },
     {
-      "title": "Ticketing System",
+      "title": "Ticket Management",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "An efficient ticket management system enabling the NPO to effectively manage participant check-ins and event payments.",
       "tags": ["Software", "C# .NET", "PHP", "MySQL"],
       "imageUrl": "/wordanalytics.png"
     }

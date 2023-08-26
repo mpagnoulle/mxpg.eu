@@ -98,7 +98,7 @@ export default function Skills() {
                   style={{ backgroundColor: iconColor, height: "64px", width: "64px" }}
                 >
                   <SVG src={iconSVG} fill="#FFF" style={{ height: "40px", width: "40px" }} />
-                  <span class='tooltip relative mt-11 p-2 text-sm border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.10] backdrop-blur-[0.5rem] rounded-lg dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 transition ease-in-out opacity-0'>{skill}</span>
+                  <span class='tooltip relative mt-11 p-2 text-sm border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.10] backdrop-blur-[0.5rem] rounded-lg dark:text-white dark:text-opacity-80 dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 transition ease-in-out opacity-0'>{skill}</span>
                 </motion.li>
               )})}
           </ul>

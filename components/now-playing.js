@@ -43,7 +43,7 @@ const NowPlaying = () => {
   return (
     <div
       ref={scope}
-      className="flex relative group items-center border opacity-0 overflow-hidden border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg backdrop-blur-[0.5rem] shadow-black/[0.03] w-full sm:w-[26rem] rounded-xl dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:-translate-y-1 transition-all cursor-pointer active:translate-y-0"
+      className="flex relative group items-center border opacity-0 overflow-hidden border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg backdrop-blur-[0.5rem] shadow-black/[0.03] w-full sm:w-[26rem] rounded-xl dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:-translate-y-1 transition-transform cursor-pointer active:translate-y-0"
       onClick={() => {  window.open(song.externalURL, '_blank', 'noreferrer'); }}
     >
       <img
@@ -70,7 +70,7 @@ const NowPlaying = () => {
         </p>
       </div>
       <SiSpotify
-        className="absolute group-hover:opacity-100 transition-all right-1 top-1 opacity-50"
+        className="absolute group-hover:opacity-100 transition-opacity right-1 top-1 opacity-50"
         style={{ height: "20px", width: "20px", color: "#1DB954" }}
       />
     </div>

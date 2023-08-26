@@ -49,7 +49,7 @@ export default function Intro() {
             transition={{
               type: "spring",
               stiffness: 125,
-              delay: 0.1,
+              delay: 0.2,
               duration: 0.7,
             }}
           >
@@ -77,7 +77,7 @@ export default function Intro() {
         <div className="flex-initial">
           <Link
             href="#contact"
-            className="group bg-gray-900 backdrop-blur-[0.5rem] dark:bg-opacity-60 text-white px-7 py-3 mx-1 flex items-center gap-2 rounded-xl outline-none focus:scale-[1.05] hover:scale-[1.05] hover:bg-gray-950 active:scale-100 transition"
+            className="group backdrop-blur-[0.5rem] dark:bg-opacity-60 px-7 py-3 mx-1 flex items-center gap-2 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -89,7 +89,7 @@ export default function Intro() {
         </div>
         <div className="flex-initial grid grid-cols-2 my-4">
           <a
-            className="flex-none bg-white backdrop-blur-[0.5rem] bg-opacity-80 p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 mx-1 rounded-xl focus:scale-[1.10] hover:scale-[1.10] active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 dark:bg-opacity-60 p-3.5 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
             href="https://www.linkedin.com/in/mpagnoulle/"
             target="_blank"
           >
@@ -97,7 +97,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="flex-none bg-white backdrop-blur-[0.5rem] p-3 bg-opacity-80 text-gray-700 flex items-center gap-2 mx-1 text-[1.35rem] rounded-xl focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 dark:bg-opacity-60 p-3.5 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
             href="https://github.com/mpagnoulle"
             target="_blank"
           >

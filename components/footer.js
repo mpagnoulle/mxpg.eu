@@ -6,7 +6,7 @@ export default function Footer() {
       <small className="mb-2 block text-xs">
         &copy; 2023 Maxime Pagnoulle. All rights reserved.
       </small>
-      <p className="text-xs">Built with React & Next.js</p>
+      <p className="text-xs">Built with Next.js</p>
     </footer>
   );
 }
