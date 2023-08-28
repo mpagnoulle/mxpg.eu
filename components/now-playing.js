@@ -43,7 +43,7 @@ const NowPlaying = () => {
   return (
     <div
       ref={scope}
-      className="flex relative group items-center border opacity-0 overflow-hidden border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg backdrop-blur-[0.5rem] shadow-black/[0.03] w-full sm:w-[26rem] rounded-xl dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:-translate-y-1 transition-transform cursor-pointer active:translate-y-0"
+      className="flex relative group items-center border opacity-0 overflow-hidden border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg backdrop-blur-[0.5rem] shadow-black/[0.03] w-full sm:w-[26rem] rounded-xl dark:bg-gray-950 hover:ring-2 ring-[#1DB954] dark:border-gray-900/40 dark:bg-opacity-40 transition-shadow duration-300 ease-in-out cursor-pointer"
       onClick={() => {  window.open(song.externalURL, '_blank', 'noreferrer'); }}
     >
       <img

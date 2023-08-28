@@ -9,10 +9,10 @@ import data from '../data.json'
 const { projects } = data
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects")
+  const { ref } = useSectionInView("Projects", 0.25)
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="projects" className="scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       <div>
         {projects.map((project, index) => (

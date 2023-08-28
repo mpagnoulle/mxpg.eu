@@ -8,7 +8,7 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("Contact", 0.9);
 
   return (
     <motion.section
@@ -54,7 +54,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg border border-gray-200 bg-white bg-opacity-60 dark:bg-gray-950 dark:bg-opacity-40 dark:border-gray-800 dark:focus:bg-opacity-100 transition-all focus:outline-none hover:outline-none hover:shadow-sm focus:shadow-sm outline-none focus:border-gray-400 hover:border-gray-300"
+          className="h-14 px-4 rounded-lg form-input"
           name="senderName"
           type="text"
           required
@@ -63,7 +63,7 @@ export default function Contact() {
         />
         <input type="hidden" name="senderFirstName" value="" />
         <input
-          className="h-14 my-3 px-4 rounded-lg border border-gray-200 bg-white bg-opacity-60 dark:bg-gray-950 dark:bg-opacity-40 dark:border-gray-800 dark:focus:bg-opacity-100 transition-all focus:outline-none hover:outline-none hover:shadow-sm focus:shadow-sm outline-none focus:border-gray-400 hover:border-gray-300"
+          className="h-14 my-3 px-4 form-input"
           name="senderEmail"
           type="email"
           required
@@ -71,7 +71,7 @@ export default function Contact() {
           placeholder="E-Mail Address"
         />
         <textarea
-          className="h-52 my-3 rounded-lg border border-gray-200 bg-white bg-opacity-60 p-4 dark:bg-gray-950 dark:bg-opacity-40 dark:border-gray-800 dark:focus:bg-opacity-100 transition-all focus:outline-none hover:outline-none hover:shadow-sm focus:shadow-sm outline-none focus:border-gray-400 hover:border-gray-300"
+          className="h-52 my-3 px-4 py-3 form-input"
           name="message"
           placeholder="Message"
           required

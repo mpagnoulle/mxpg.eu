@@ -15,16 +15,17 @@ import data from "../data.json";
 const { intro } = data;
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-20 sm:mt-28 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-[100rem] justify-center"
+      className="flex flex-col w-[min(100%,38rem)] text-center items-center sm:mb-0"
+      style={{ height: "calc(100vh - 10rem)" }}
     >
-      <div className="flex flex-row">
+      <div className="flex grow flex-row w-full items-center">
         <div className="flex-auto">
           <motion.h1
             className="mb-10 mt-4 px-4 text-2xl text-left font-medium !leading-[1.5] sm:text-4xl"
@@ -77,7 +78,7 @@ export default function Intro() {
         <div className="flex-initial">
           <Link
             href="#contact"
-            className="group backdrop-blur-[0.5rem] dark:bg-opacity-60 px-7 py-3 mx-1 flex items-center gap-2 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
+            className="group px-7 py-3 mx-1 flex items-center gap-2 button-lg"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -89,7 +90,7 @@ export default function Intro() {
         </div>
         <div className="flex-initial grid grid-cols-2 my-4">
           <a
-            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 dark:bg-opacity-60 p-3.5 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
+            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 p-3.5 button-lg"
             href="https://www.linkedin.com/in/mpagnoulle/"
             target="_blank"
           >
@@ -97,7 +98,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 dark:bg-opacity-60 p-3.5 rounded-lg border border-transparent text-white text-opacity-95 bg-gray-800 hover:bg-gray-950 outline outline-gray-950 outline-0 hover:outline-2 hover:outline-offset-2 hover:outline-gray-950 dark:hover:ring-0 dark:hover:outline-gray-800 active:scale-95 transition-all ease-in-out duration-100"
+            className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 p-3.5 button-lg"
             href="https://github.com/mpagnoulle"
             target="_blank"
           >
@@ -106,7 +107,7 @@ export default function Intro() {
         </div>
       </motion.div>
       <div
-        className="flex items-center justify-center mt-20">
+        className="flex grow items-center justify-center w-full">
         <NowPlaying />
       </div>
     </section>

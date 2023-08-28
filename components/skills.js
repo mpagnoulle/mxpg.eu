@@ -5,11 +5,9 @@ import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { textToIconName } from "@/lib/utils";
-//import { skillsData } from "@/lib/data";
 import * as icons from 'simple-icons';
 import SVG from 'react-inlinesvg';
 import { CSharpIcon } from "@/lib/icons";
-import { v4 } from 'uuid'
 
 
 import data from '../data.json'
@@ -18,13 +16,15 @@ const { skills } = data
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 100,
+    y: 20
   },
   animate: (index) => ({
     opacity: 1,
     y: 0,
+    duration: 0.5,
     transition: {
       delay: 0.05 * index,
+      ease: "easeInOut",
     },
   }),
 };
@@ -58,13 +58,13 @@ const getIcon = (iconName) => {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills")
+  const { ref } = useSectionInView("Skills", 0.33)
 
   return (
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="max-w-[53rem] scroll-mt-28 text-center"
     >
       <SectionHeading>Skills</SectionHeading>
       {
