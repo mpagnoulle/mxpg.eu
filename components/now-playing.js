@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAnimate, easeOut } from "framer-motion";
+import { useAnimate } from "framer-motion";
 import { SiSpotify } from "@icons-pack/react-simple-icons";
 
 const NowPlaying = () => {
@@ -70,7 +70,7 @@ const NowPlaying = () => {
         </p>
       </div>
       <SiSpotify
-        className="absolute group-hover:opacity-100 transition-opacity right-1 top-1 opacity-50"
+        className="absolute group-hover:opacity-100 transition-opacity right-1 top-1 opacity-50 duration-300 ease-in-out"
         style={{ height: "20px", width: "20px", color: "#1DB954" }}
       />
     </div>

@@ -87,7 +87,8 @@
       "description":
         "An iOS app allowing users to plan and track their train journeys on the SNCB/NMBS network, it offers route planning, live tracking, and up-to-date travel information, enhancing the travel experience for commuters and travelers.",
       "tags": ["Mobile App", "Objective-C", "Node.js", "PHP", "MySQL"],
-      "imageUrl": "/ontracks.jpg"
+      "imageUrl": "/ontracks.png",
+      "link": "https://hello.irail.be/2015/08/18/comparing-the-iphone-apps/"
     },
     {
       "title": "RotexBelgium",
@@ -96,13 +97,6 @@
       "tags": ["Website", "PHP", "jQuery", "MySQL"],
       "imageUrl": "/rotexbelgium.png",
       "link": "https://rotexbelgium.be"
-    },
-    {
-      "title": "Ticket Management", 
-      "description":
-        "An efficient ticket management system enabling the NPO to effectively manage participant check-ins and event payments.",
-      "tags": ["Software", "C# .NET", "PHP", "MySQL"],
-      "imageUrl": "/wordanalytics.png"
     }
   ]
 }
