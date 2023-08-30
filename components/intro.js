@@ -22,7 +22,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col w-[min(100%,38rem)] text-center items-center sm:mb-0"
+      className="flex flex-col w-[min(100%,38rem)] text-center items-center sm:mb-0 scroll-mt-[100rem]"
       style={{ height: "calc(100vh - 10rem)" }}
     >
       <div className="flex grow flex-row w-full items-center">

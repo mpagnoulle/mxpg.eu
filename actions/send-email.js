@@ -6,7 +6,6 @@ import { validateString, getErrorMessage, validateEmail } from "@/lib/utils";
 const transporter = createTransport({
   host: "smtp-relay.sendinblue.com",
   port: 587,
-  secure: true,
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PWD,
@@ -40,10 +39,12 @@ export const sendEmail = async (formData) => {
       error: "Invalid Message",
     };
   }
+  let data;
 
-  await transporter.sendMail({
-    from: senderName + "<" + senderEmail + ">",
-    to: "mpagnoulle@gmail.com",
+  data = await transporter.sendMail({
+    from: senderName + "<me@mxpg.eu>",
+    replyTo: senderEmail,
+    to: process.env.RECEIVER_EMAIL,
     subject: "[MXPG] " + subject,
     text: message,
   }), (error, info) => {
@@ -51,10 +52,10 @@ export const sendEmail = async (formData) => {
       return {
         error: getErrorMessage(error),
       };
-    } else {
-      return {
-        data,
-      };
     }
+  };
+
+  return {
+    data,
   };
 };
