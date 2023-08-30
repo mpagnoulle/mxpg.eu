@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
+import { sendEmail } from "@/actions/send-email"
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SubmitBtn from "./submit-btn";
@@ -41,18 +42,19 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          /*const { data, error } = await sendEmail(formData)
+          const { data, error } = await sendEmail(formData)
 
           if (error) {
             toast.error(error)
             return
-          }*/
+          }
 
           toast.success("E-mail sent! I'll get back to you soon.", {
             duration: 5000,
           });
         }}
       >
+        <input type="text" name="senderFirstName" value="" className="h-0 w-0" />
         <input
           className="h-14 px-4 rounded-lg form-input"
           name="senderName"
@@ -61,7 +63,6 @@ export default function Contact() {
           maxLength={500}
           placeholder="Name"
         />
-        <input type="hidden" name="senderFirstName" value="" />
         <input
           className="h-14 my-3 px-4 form-input"
           name="senderEmail"
@@ -69,6 +70,14 @@ export default function Contact() {
           required
           maxLength={500}
           placeholder="E-Mail Address"
+        />
+        <input
+          className="h-14 mt-3 px-4 form-input"
+          name="subject"
+          type="text"
+          required
+          maxLength={500}
+          placeholder="Subject"
         />
         <textarea
           className="h-52 my-3 px-4 py-3 form-input"

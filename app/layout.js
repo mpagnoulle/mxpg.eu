@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Maxime Pagnoulle",
-  description: "Maxime Pagnoulle is a Software Developer with a passion to turn ideas into reality.",
+  description: "Maxime Pagnoulle is a Software Engineer with a passion to turn ideas into user-centric applications",
 };
 
 export default function RootLayout({children}) {
