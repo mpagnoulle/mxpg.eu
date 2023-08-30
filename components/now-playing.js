@@ -22,7 +22,6 @@ const NowPlaying = () => {
           await img.decode();
 
           await animate(scope.current, { opacity: 0 }, { duration: 0.25, ease: "easeOut" });
-          //currentSong = updatedSongInfo;
           setSong(updatedSongInfo);
           
           await animate(scope.current, { opacity: 1}, { duration: 0.5, ease: "easeOut" }
