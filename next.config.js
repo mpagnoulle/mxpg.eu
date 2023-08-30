@@ -1,15 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
-  },
   experimental: {
     serverActions: true,
+  },
+  env: {
+    SMTP_USER: process.env.SMTP_USER,
+    SMTP_PWD: process.env.SMTP_PWD,
+    RECEIVER_EMAIL: process.env.RECEIVER_EMAIL,
   },
 };
 
