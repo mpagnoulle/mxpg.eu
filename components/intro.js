@@ -3,8 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 import ReactTyped from "react-typed";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -16,7 +14,6 @@ const { intro } = data;
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -28,12 +25,12 @@ export default function Intro() {
       <div className="flex grow flex-row w-full items-center">
         <div className="flex-auto">
           <motion.h1
-            className="mb-10 mt-4 px-4 text-2xl text-left font-medium !leading-[1.5] sm:text-4xl"
+            className="mb-10 mt-4 px-4 text-xl text-left font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="block font-bold">Hello,</span>
-            <span className="block font-bold">I&apos;m Maxime</span>
+            <span className="block font-bold">I&apos;m Maxime Pagnoulle</span>
             <ReactTyped
               strings={intro.typed}
               typeSpeed={60}
@@ -54,14 +51,15 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            <div className="relative w-[100px] h-[123px] sm:w-[150px] sm:h-[184px]">
+            <div className="relative w-[100px] h-[100px] sm:w-[150px] sm:h-[150px]">
               <Image
-                src="/me_avatar.png"
+                src="/me.jpg"
                 alt="Maxime's portrait"
-                fill={true}
+                width={150}
+                height={150}
                 quality={100}
                 priority={true}
-                className="w-[100px] h-[123px] sm:w-[150px] sm:h-[184px]"
+                className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] bg-white bg-opacity-80 rounded-full shadow-lg p-1.5"
               />
             </div>
           </motion.div>
@@ -75,19 +73,6 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <div className="flex-initial">
-          <Link
-            href="#contact"
-            className="group px-7 py-3 mx-1 flex items-center gap-2 button-lg"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
-          >
-            Contact me{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-          </Link>
-        </div>
         <div className="flex-initial grid grid-cols-2 my-4">
           <a
             className="flex-none backdrop-blur-[0.5rem] flex items-center gap-2 mx-1 p-3.5 button-lg"
