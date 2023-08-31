@@ -25,7 +25,7 @@ export default function Intro() {
       <div className="flex grow flex-row w-full items-center">
         <div className="flex-auto">
           <motion.h1
-            className="mb-10 mt-4 px-4 text-xl text-left font-medium !leading-[1.5] sm:text-4xl"
+            className="mb-10 mt-4 text-xl text-left font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
