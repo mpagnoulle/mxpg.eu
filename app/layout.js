@@ -6,6 +6,9 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-RCQEM9C8WN");
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +20,7 @@ export const metadata = {
 export default function RootLayout({children}) {
 
   return (
-    <html lang="en" className="!scroll-smooth snap-y">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
