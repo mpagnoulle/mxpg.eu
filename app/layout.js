@@ -6,9 +6,6 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-RCQEM9C8WN");
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +36,15 @@ export default function RootLayout({children}) {
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-RCQEM9C8WN');
+        `}
+</Script>
       </body>
     </html>
   );y
