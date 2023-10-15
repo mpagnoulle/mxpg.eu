@@ -57,7 +57,6 @@ export default function Contact() {
         <input
           type="text"
           name="senderFirstName"
-          value=""
           className="h-0 w-0"
         />
         <input
