@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --force",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^8.0.1",
+    "@icons-pack/react-simple-icons": "^9.1.0",
     "@vercel/analytics": "^1.0.2",
     "autoprefixer": "10.4.15",
     "axios": "^1.4.0",
@@ -30,7 +30,6 @@
     "react-svg": "^16.1.22",
     "react-typed": "^1.2.0",
     "resend": "^1.0.0",
-    "simple-icons": "^9.11.0",
     "tailwindcss": "3.3.3",
     "uuid": "^9.0.0"
   }
