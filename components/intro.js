@@ -5,7 +5,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import ReactTyped from "react-typed";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import { SiLinkedin, SiGithub } from "@icons-pack/react-simple-icons";
 import NowPlaying from "./now-playing";
 
