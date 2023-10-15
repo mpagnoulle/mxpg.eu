@@ -30,7 +30,7 @@ const fadeInAnimationVariants = {
 
 const getIcon = async (iconName) => {
   const iconSlug = textToIconName(iconName);
-  const cdnUrl = `https://maxpag.eu/mxpg/get_icon.php?iconSlug=${iconSlug}`;
+  const cdnUrl = `http://maxpag.eu/mxpg/get_icon.php?iconSlug=${iconSlug}`;
 
   // Special case for C# because the icon is not available on the CDN
   if (iconName === "C#") {
