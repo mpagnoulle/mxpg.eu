@@ -56,7 +56,7 @@ export default function Intro() {
                 alt="Maxime's portrait"
                 width={150}
                 height={150}
-                quality={90}
+                quality={100}
                 priority={true}
                 className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] bg-white bg-opacity-80 rounded-full shadow-lg p-1.5"
               />
