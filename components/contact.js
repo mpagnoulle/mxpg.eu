@@ -58,6 +58,7 @@ export default function Contact() {
           type="text"
           name="senderFirstName"
           className="h-0 w-0"
+          placeholder="First Name"
         />
         <input
           className="h-14 px-4 rounded-lg form-input"

@@ -47,7 +47,7 @@ html.dark {
   background-position: center;
   background-image:
     linear-gradient(to bottom, rgba(249, 250, 251, 0), rgba(249, 250, 251, 1)),
-    url('/bg_gradient.png');
+    url('/bg_gradient.jpg');
 }
 
 .bg-grid-dark {
@@ -61,5 +61,5 @@ html.dark {
   background-position: center;
   background-image:
     linear-gradient(to bottom, rgba(17, 24, 39, 0), rgba(17, 24, 39, 1)),
-    url('/bg_gradient_dark.png');
+    url('/bg_gradient_dark.jpg');
 }
