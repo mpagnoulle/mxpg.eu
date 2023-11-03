@@ -1,3 +1,5 @@
+"use client"
+
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import Projects from "@/components/projects";
